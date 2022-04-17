@@ -1,0 +1,14 @@
+syntax = "proto3";
+package marlinmixon.figleaf.figleaf;
+
+import "gogoproto/gogo.proto";
+import "figleaf/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/marlin-mixon/figleaf/x/figleaf/types";
+
+// GenesisState defines the figleaf module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

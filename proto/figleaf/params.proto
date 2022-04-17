@@ -1,0 +1,12 @@
+syntax = "proto3";
+package marlinmixon.figleaf.figleaf;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/marlin-mixon/figleaf/x/figleaf/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
